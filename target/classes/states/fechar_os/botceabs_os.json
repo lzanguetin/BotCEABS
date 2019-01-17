@@ -3,13 +3,13 @@
 		{
 			"id": "/OS",
 			"idNavigationDetail": 180,
-			"initialMessages": ["Primeiro, digite a ordem de servico:"],
+			"initialMessages": ["Primeiro, digite a ordem de serviço:"],
 			"inputErrorResponses":[
-				{"order":"1", "messages":["Acho que voce digitou alguma letra por engano, pois ela nao existe na OS, apenas numeros. Digite os numeros da ordem de servico."]},
-				{"order":"2", "messages": ["Olha so, a OS possui pelo menos 7 digitos, veja se nao ficou faltando algum numero e digite novamente."]}
+				{"order":"1", "messages":["Acho que você digitou alguma letra por engano, pois ela não existe na OS, apenas números. Digite os números da ordem de serviço."]},
+				{"order":"2", "messages": ["Olha só, a OS possui pelo menos 7 dígitos, veja se não ficou faltando algum número e digite novamente."]}
 			],
-			"maxInputErrorResponses":["Me desculpe por nao conseguir entender sua resposta, mas nao se preocupe que vou prosseguir com o Atendimento."],
-			"noInputResponses":[{"order":"1", "messages":["Voce nao esta respondendo. Tudo bem, nao tem problema. Vou continuar trabalhando por aqui e quando voce precisar de ajuda pode me chamar."]}]
+			"maxInputErrorResponses":["Me desculpe por não conseguir entender sua resposta, mas não se preocupe que vou prosseguir com o Atendimento."],
+			"noInputResponses":[{"order":"1", "messages":["Você não está respondendo. Tudo bem, não tem problema. Vou continuar trabalhando por aqui e quando você precisar de ajuda pode me chamar."]}]
 		}
 	]
 }

@@ -5,7 +5,7 @@
   	<modelVersion>4.0.0</modelVersion>
 
   	<groupId>br.com.voxage</groupId>
-  	<artifactId>BotTreinamento</artifactId>
+  	<artifactId>BotCEABS</artifactId>
   	<version>0.0.1-SNAPSHOT</version>
   	<packaging>jar</packaging>
 
@@ -15,7 +15,7 @@
 		<maven.compiler.target>1.8</maven.compiler.target>
   	</properties>
   
-  	<name>BotTreinamento</name>
+  	<name>BotCEABS</name>
   	<url>http://maven.apache.org</url>
 	
 	<repositories>
@@ -64,7 +64,7 @@
         </dependency>
     </dependencies>
     <build>
-    	<finalName>BotTreinamento</finalName>
+    	<finalName>BotCEABS</finalName>
     		<plugins>
     			<plugin>
     				<groupId>org.codehaus.mojo</groupId>
@@ -83,7 +83,7 @@
     					<mainClass>br.com.voxage.vbot.utils.MetaDataGenerator</mainClass>
     					<arguments>
     						<argument>${project.build.outputDirectory}</argument>
-    						<argument>br.com.voxage.bottreinamento</argument>
+    						<argument>br.com.voxage.botceabs</argument>
     					</arguments>	
 					</configuration>
     			</plugin>

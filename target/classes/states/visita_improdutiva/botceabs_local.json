@@ -3,13 +3,13 @@
 		{
 			"id": "/LOCAL",
 			"idNavigationDetail":250,
-			"initialMessages": ["Voce ainda esta no local?"],
+			"initialMessages": ["Você ainda está no local?"],
 			"inputErrorResponses":[
-				{"order":"1", "messages":["Nao entendi o que voce falou. Sou um robo e ainda estou aprendendo algumas palavras. Preciso saber se voce esta no,local, digite sim se esive ou nao, caso nao esteja."]},
-				{"order":"2", "messages": ["Ainda nao entendi o que voce quis dizer. Pode me falar se voce ainda esta no local? Digite apenas sim ou nao."]}
+				{"order":"1", "messages":["Não entendi o que você falou. Sou um robô e ainda estou aprendendo algumas palavras. Preciso saber se você está no,local, digite sim se estiver ou não, caso não esteja."]},
+				{"order":"2", "messages": ["Ainda não entendi o que você quis dizer. Pode me falar se você ainda está no local? Digite apenas sim ou não."]}
 			],
-			"maxInputErrorResponses":["Me desculpe por nao conseguir entender sua resposta, mas nao se preocupe que vou prosseguir com o Atendimento."],
-			"noInputResponses":[{"order":"1", "messages":["Voce nao esta respondendo. Tudo bem, nao tem problema. Vou continuar trabalhando por aqui e quando voce precisar de ajuda pode me chamar."]}]
+			"maxInputErrorResponses":["Me desculpe por não conseguir entender sua resposta, mas não se preocupe que vou prosseguir com o Atendimento."],
+			"noInputResponses":[{"order":"1", "messages":["Você não está respondendo. Tudo bem, não tem problema. Vou continuar trabalhando por aqui e quando você precisar de ajuda pode me chamar."]}]
 		}
 	]
 }

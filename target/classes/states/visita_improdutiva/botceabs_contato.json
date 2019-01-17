@@ -3,13 +3,13 @@
 		{
 			"id": "/CONTATO",
 			"idNavigationDetail":260,
-			"initialMessages": ["Voce falou com alguem no local? Com quem?"],
+			"initialMessages": ["Você falou com alguem no local? Com quem?"],
 			"inputErrorResponses":[
-				{"order":"1", "messages":["Nao entendi o que voce falou. Sou um robo e ainda estou aprendendo algumas palavras. Preciso saber se voce falou com alguem no local e se falou, com quem?."]},
-				{"order":"2", "messages": ["Ainda nao entendi o que voce quis dizer. Pode me falar se voce falou com alguem no local e com quem?"]}
+				{"order":"1", "messages":["Não entendi o que você falou. Sou um robô e ainda estou aprendendo algumas palavras. Preciso saber se você falou com alguém no local e se falou, com quem?."]},
+				{"order":"2", "messages": ["Ainda não entendi o que você quis dizer. Pode me falar se você falou com alguém no local e com quem?"]}
 			],
-			"maxInputErrorResponses":["Me desculpe por nao conseguir entender sua resposta, mas nao se preocupe que vou prosseguir com o Atendimento."],
-			"noInputResponses":[{"order":"1", "messages":["Voce nao esta respondendo. Tudo bem, nao tem problema. Vou continuar trabalhando por aqui e quando voce precisar de ajuda pode me chamar."]}]
+			"maxInputErrorResponses":["Me desculpe por não conseguir entender sua resposta, mas não se preocupe que vou prosseguir com o Atendimento."],
+			"noInputResponses":[{"order":"1", "messages":["Você não está respondendo. Tudo bem, não tem problema. Vou continuar trabalhando por aqui e quando voce precisar de ajuda pode me chamar."]}]
 		}
 	]
 }

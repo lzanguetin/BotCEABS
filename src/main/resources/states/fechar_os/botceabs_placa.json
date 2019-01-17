@@ -3,8 +3,8 @@
 		{
 			"id": "/PLACA",
 			"idNavigationDetail":230,
-			"initialMessages": ["Informe a placa do veiculo. Se nao houver, digite Nao Possui:"],
-			"noInputResponses":[{"order":"1", "messages":["Voce nao esta respondendo. Tudo bem, nao tem problema. Vou continuar trabalhando por aqui e quando voce precisar de ajuda pode me chamar."]}]
+			"initialMessages": ["Informe a placa do veículo. Se não houver, digite Não Possui:"],
+			"noInputResponses":[{"order":"1", "messages":["Você não está respondendo. Tudo bem, não tem problema. Vou continuar trabalhando por aqui e quando você precisar de ajuda pode me chamar."]}]
 		}
 	]
 }

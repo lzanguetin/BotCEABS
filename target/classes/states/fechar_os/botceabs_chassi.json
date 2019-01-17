@@ -3,8 +3,8 @@
 		{
 			"id": "/CHASSI",
 			"idNavigationDetail":240,
-			"initialMessages": ["Informe o chassi do veiculo:"],
-			"noInputResponses":[{"order":"1", "messages":["Voce nao esta respondendo. Tudo bem, nao tem problema. Vou continuar trabalhando por aqui e quando voce precisar de ajuda pode me chamar."]}]
+			"initialMessages": ["Informe o chassi do veículo:"],
+			"noInputResponses":[{"order":"1", "messages":["Você não está respondendo. Tudo bem, não tem problema. Vou continuar trabalhando por aqui e quando você precisar de ajuda pode me chamar."]}]
 		}
 	]
 }

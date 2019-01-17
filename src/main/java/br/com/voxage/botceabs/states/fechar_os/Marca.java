@@ -2,19 +2,19 @@ package br.com.voxage.botceabs.states.fechar_os;
 
 import java.util.HashMap;
 
-import br.com.voxage.botceabs.BotCeabs;
+import br.com.voxage.botceabs.BotCEABS;
 import br.com.voxage.vbot.BotInputResult;
 import br.com.voxage.vbot.BotState;
 import br.com.voxage.vbot.BotStateFlow;
 import br.com.voxage.vbot.BotStateInteractionType;
 
 public class Marca {
-	public static BotState load(BotCeabs bot) {
+	public static BotState load(BotCEABS bot) {
 		return new BotState("/") {{
 				setId("MARCA");
 
 				setBotStateInteractionType(BotStateInteractionType.DIRECT_INPUT);
-				setMaxInputTime(BotCeabs.NO_INPUT_TIMEOUT); 
+				setMaxInputTime(BotCEABS.NO_INPUT_TIMEOUT); 
 				setMaxInputError(3);
 				setMaxNoInput(3);
 				
@@ -24,7 +24,7 @@ public class Marca {
 					String userInput = userInputs.getConcatenatedInputs();
 					
 					botInputResult.setResult(BotInputResult.Result.OK);
-					botInputResult.setIntentName(BotCeabs.STATES.ANO);
+					botInputResult.setIntentName(BotCEABS.STATES.ANO);
 	
 					return botInputResult;
 				});
@@ -38,7 +38,7 @@ public class Marca {
                 });
                 
                 setNextNavigationMap(new HashMap<String, String>(){{
-                	put(BotCeabs.STATES.ANO, "#ANO");
+                	put(BotCEABS.STATES.ANO, "#ANO");
                     put("MAX_NO_INPUT", "/TERMINATE");
                 }});
 		}};

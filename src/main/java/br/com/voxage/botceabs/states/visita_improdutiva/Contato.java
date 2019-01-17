@@ -2,19 +2,19 @@ package br.com.voxage.botceabs.states.visita_improdutiva;
 
 import java.util.HashMap;
 
-import br.com.voxage.botceabs.BotCeabs;
+import br.com.voxage.botceabs.BotCEABS;
 import br.com.voxage.vbot.BotInputResult;
 import br.com.voxage.vbot.BotState;
 import br.com.voxage.vbot.BotStateFlow;
 import br.com.voxage.vbot.BotStateInteractionType;
 
 public class Contato {
-	public static BotState load(BotCeabs bot) {
+	public static BotState load(BotCEABS bot) {
 		return new BotState("/") {{
 				setId("CONTATO");
 
 				setBotStateInteractionType(BotStateInteractionType.DIRECT_INPUT);
-				setMaxInputTime(BotCeabs.NO_INPUT_TIMEOUT); 
+				setMaxInputTime(BotCEABS.NO_INPUT_TIMEOUT); 
 				setMaxInputError(3);
 				setMaxNoInput(3);
 
@@ -24,7 +24,7 @@ public class Contato {
 					String userInput = userInputs.getConcatenatedInputs();
 					
 					botInputResult.setResult(BotInputResult.Result.OK);
-					botInputResult.setIntentName(BotCeabs.STATES.MOTIVOIMP);
+					botInputResult.setIntentName(BotCEABS.STATES.MOTIVOIMP);
 	
 					return botInputResult;
 				});
@@ -38,7 +38,7 @@ public class Contato {
                 });
                 
                 setNextNavigationMap(new HashMap<String, String>(){{
-                	put(BotCeabs.STATES.MOTIVOIMP, "#MOTIVOIMP");
+                	put(BotCEABS.STATES.MOTIVOIMP, "#MOTIVOIMP");
                     put("MAX_INPUT_ERROR", "#MOTIVOIMP");
                     put("MAX_NO_INPUT", "/TERMINATE");
                 }});

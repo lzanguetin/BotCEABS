@@ -3,8 +3,8 @@
 		{
 			"id": "/ANO",
 			"idNavigationDetail":210,
-			"initialMessages": ["Informe o ano de fabricacao e o modelo no formato, 20XX/20XX:"],
-			"noInputResponses":[{"order":"1", "messages":["Voce nao esta respondendo. Tudo bem, nao tem problema. Vou continuar trabalhando por aqui e quando voce precisar de ajuda pode me chamar."]}]
+			"initialMessages": ["Informe o ano de fabricação e o modelo no formato, 20XX/20XX:"],
+			"noInputResponses":[{"order":"1", "messages":["Você não está respondendo. Tudo bem, não tem problema. Vou continuar trabalhando por aqui e quando você precisar de ajuda pode me chamar."]}]
 		}
 	]
 }

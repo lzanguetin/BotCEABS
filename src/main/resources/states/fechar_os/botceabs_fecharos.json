@@ -3,7 +3,7 @@
 		{
 			"id": "/FECHAROS",
 			"idNavigationDetail":110,
-			"initialMessages": ["Ok, vamos iniciar o Fechamento da sua Ordem de Servico. Digite as informacoes solicitadas conforme descritas na OS."]
+			"initialMessages": ["Ok, vamos iniciar o Fechamento da sua Ordem de Servico. Digite as informações solicitadas conforme descritas na OS."]
 		}
 	]
 }

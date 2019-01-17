@@ -3,7 +3,7 @@ package br.com.voxage.botceabs.states._start;
 import java.util.HashMap;
 import java.util.concurrent.CompletableFuture;
 
-import br.com.voxage.botceabs.BotCeabs;
+import br.com.voxage.botceabs.BotCEABS;
 import br.com.voxage.botceabs.models.DadosFluxo;
 import br.com.voxage.vbot.BotInputResult;
 import br.com.voxage.vbot.BotState;
@@ -11,7 +11,7 @@ import br.com.voxage.vbot.BotStateFlow;
 import br.com.voxage.vbot.BotStateInteractionType;
 
 public class Start{
-	public static BotState load(BotCeabs bot) {
+	public static BotState load(BotCEABS bot) {
 		return new BotState("/") {{
 				setId("START");
 				
@@ -28,7 +28,7 @@ public class Start{
 						case "1":
 							try {
 				            	dadosFluxo.setOption("1");
-				                botInputResult.setIntentName(BotCeabs.STATES.FECHAROS);
+				                botInputResult.setIntentName(BotCEABS.STATES.FECHAROS);
 				            }
 			                catch(Exception e) {
 			                	botInputResult.setResult(BotInputResult.Result.ERROR);
@@ -37,7 +37,7 @@ public class Start{
 						case "2":
 							try {
 				            	dadosFluxo.setOption("2");
-				                botInputResult.setIntentName(BotCeabs.STATES.VISITAIMP);
+				                botInputResult.setIntentName(BotCEABS.STATES.VISITAIMP);
 				            }
 			                catch(Exception e) {
 			                	botInputResult.setResult(BotInputResult.Result.ERROR);
@@ -46,7 +46,7 @@ public class Start{
 						case "3":
 							try {
 				            	dadosFluxo.setOption("3");
-				                botInputResult.setIntentName(BotCeabs.STATES.REAGCLIENTE);
+				                botInputResult.setIntentName(BotCEABS.STATES.REAGCLIENTE);
 				            }
 			                catch(Exception e) {
 			                	botInputResult.setResult(BotInputResult.Result.ERROR);
@@ -55,7 +55,7 @@ public class Start{
 						case "4":
 							try {
 				            	dadosFluxo.setOption("4");
-				                botInputResult.setIntentName(BotCeabs.STATES.APOIOTEC);
+				                botInputResult.setIntentName(BotCEABS.STATES.APOIOTEC);
 				            }
 			                catch(Exception e) {
 			                	botInputResult.setResult(BotInputResult.Result.ERROR);
@@ -64,7 +64,7 @@ public class Start{
 						case "5":
 							try {
 				            	dadosFluxo.setOption("5");
-				                botInputResult.setIntentName(BotCeabs.STATES.OUTROS);
+				                botInputResult.setIntentName(BotCEABS.STATES.OUTROS);
 				            }
 			                catch(Exception e) {
 			                	botInputResult.setResult(BotInputResult.Result.ERROR);
@@ -85,11 +85,11 @@ public class Start{
 				});
 				
 				setNextNavigationMap(new HashMap<String, String>(){{
-					put(BotCeabs.STATES.FECHAROS, "#FECHAROS");
-					put(BotCeabs.STATES.VISITAIMP, "#VISITAIMP");
-					put(BotCeabs.STATES.REAGCLIENTE, "#REAGCLIENTE");
-					put(BotCeabs.STATES.APOIOTEC, "#APOIOTEC");
-					put(BotCeabs.STATES.OUTROS, "#OUTROS");				
+					put(BotCEABS.STATES.FECHAROS, "#FECHAROS");
+					put(BotCEABS.STATES.VISITAIMP, "#VISITAIMP");
+					put(BotCEABS.STATES.REAGCLIENTE, "#REAGCLIENTE");
+					put(BotCEABS.STATES.APOIOTEC, "#APOIOTEC");
+					put(BotCEABS.STATES.OUTROS, "#OUTROS");				
                     put("MAX_INPUT_ERROR", "/TERMINATE");
                     put("MAX_NO_INPUT", "/TERMINATE");
 				}});

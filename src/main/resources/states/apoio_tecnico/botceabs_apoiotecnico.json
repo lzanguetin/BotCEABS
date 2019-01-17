@@ -3,13 +3,13 @@
 		{
 			"id": "/APOIOTEC",
 			"idNavigationDetail": 140,
-			"initialMessages": ["Qual tipo de apoio voce precisa? Digite uma das opcoes a seguir:\n1 - Apoio NGP\n2 - Duvidas Tecnicas"],
+			"initialMessages": ["Qual tipo de apoio você precisa? Digite uma das opções a seguir:\n1 - Apoio NGP\n2 - Dúvidas Técnicas"],
 			"inputErrorResponses":[
-				{"order":"1", "messages":["Desculpe, mas esta opcao que voce escolheu nao existe. Escolha uma das opcoes e digite apenas o numero da opcao:\n1 - Apoio NGP\n2 - Duvidas Tecnicas"]},
-				{"order":"2", "messages": ["Desculpe, mas voce escolheu opcao que nao existe. Para eu te ajudar, escolha uma das opcoes a seguir e digite apenas o numero correspondente a ela::\n1 - Apoio NGP\n2 - Duvidas Tecnicas"]}
+				{"order":"1", "messages":["Desculpe, mas esta opção que você escolheu não existe. Escolha uma das opções e digite apenas o número da opção:\n1 - Apoio NGP\n2 - Dúvidas Técnicas"]},
+				{"order":"2", "messages": ["Desculpe, mas você escolheu opção que não existe. Para eu te ajudar, escolha uma das opções a seguir e digite apenas o número correspondente a ela:\n1 - Apoio NGP\n2 - Dúvidas Técnicas"]}
 			],
-			"maxInputErrorResponses":["Desculpe, mas voce nao digitou nenhuma opcao valida. Vou continuar trabalhando e quando voce precisar de ajuda pode me chamr."],
-			"noInputResponses":[{"order":"1", "messages":["Voce nao esta respondendo. Tudo bem, nao tem problema. Vou continuar trabalhando por aqui e quando voce precisar de ajuda pode me chamar."]}]
+			"maxInputErrorResponses":["Desculpe, mas você não digitou nenhuma opção válida. Vou continuar trabalhando e quando você precisar de ajuda pode me chamar."],
+			"noInputResponses":[{"order":"1", "messages":["Você não está respondendo. Tudo bem, não tem problema. Vou continuar trabalhando por aqui e quando você precisar de ajuda pode me chamar."]}]
 		}
 	]
 }

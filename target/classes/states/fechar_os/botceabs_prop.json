@@ -3,8 +3,8 @@
 		{
 			"id": "/PROP",
 			"idNavigationDetail": 190,
-			"initialMessages": ["Agora me informe o Proprietario do veiculo:"],
-			"noInputResponses":[{"order":"1", "messages":["Voce nao esta respondendo. Tudo bem, nao tem problema. Vou continuar trabalhando por aqui e quando voce precisar de ajuda pode me chamar."]}]
+			"initialMessages": ["Agora me informe o Proprietário do veículo:"],
+			"noInputResponses":[{"order":"1", "messages":["Você não está respondendo. Tudo bem, não tem problema. Vou continuar trabalhando por aqui e quando você precisar de ajuda pode me chamar."]}]
 		}
 	]
 }

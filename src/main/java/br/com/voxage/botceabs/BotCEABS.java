@@ -15,8 +15,8 @@ import br.com.voxage.vbot.BotStateInteractionType;
 import br.com.voxage.vbot.VBot;
 import br.com.voxage.vbot.utils.ClassFinder;
 
-@Bot(name="BotCeabs")
-public class BotCeabs extends VBot {
+@Bot(name="BotCEABS")
+public class BotCEABS extends VBot {
 	
 	public static int NO_INPUT_TIMEOUT = 180000;
 	
@@ -49,7 +49,7 @@ public class BotCeabs extends VBot {
 	    	String OUTROS = "outros";
 	}
 	 
-	public BotCeabs() {
+	public BotCEABS() {
 		this.dadosFluxo = new DadosFluxo();
 	}
 	 
@@ -105,7 +105,7 @@ public class BotCeabs extends VBot {
 	public void loadStates() {
 		BotContext botContext = new BotContext();
 		Map<String, BotState> m = new HashMap<>();
-		m.putAll(ClassFinder.loadAllStates("br.com.voxage.botceabs.states", BotCeabs.class, BotCeabs.this));
+		m.putAll(ClassFinder.loadAllStates("br.com.voxage.botceabs.states", BotCEABS.class, BotCEABS.this));
 		botContext.setId("/");
 		botContext.setContextNavigationMap(new HashMap<String, String>() {			
         });

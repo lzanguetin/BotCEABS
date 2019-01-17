@@ -2,21 +2,21 @@ package br.com.voxage.botceabs.states.reag_cliente;
 
 import java.util.HashMap;
 
-import br.com.voxage.botceabs.BotCeabs;
+import br.com.voxage.botceabs.BotCEABS;
 import br.com.voxage.vbot.BotInputResult;
 import br.com.voxage.vbot.BotState;
 import br.com.voxage.vbot.BotStateFlow;
 import br.com.voxage.vbot.BotStateInteractionType;
 
 public class ReagCliente {
-	public static BotState load(BotCeabs bot) {
+	public static BotState load(BotCEABS bot) {
 		return new BotState("/") {{
 				setId("REAGCLIENTE");
 
 				setBotStateInteractionType(BotStateInteractionType.NO_INPUT);
 
 				setPreFunction(botState ->{
-					bot.setLastState(BotCeabs.STATES.START);
+					bot.setLastState(BotCEABS.STATES.START);
 					
 					BotStateFlow botStateFlow = new BotStateFlow();
 					botStateFlow.flow = BotStateFlow.Flow.CONTINUE;

@@ -3,8 +3,8 @@
 		{
 			"id": "/COR",
 			"idNavigationDetail":220,
-			"initialMessages": ["Informe a cor do veiculo:"],
-			"noInputResponses":[{"order":"1", "messages":["Voce nao esta respondendo. Tudo bem, nao tem problema. Vou continuar trabalhando por aqui e quando voce precisar de ajuda pode me chamar."]}]
+			"initialMessages": ["Informe a cor do veículo:"],
+			"noInputResponses":[{"order":"1", "messages":["Você não esta respondendo. Tudo bem, não tem problema. Vou continuar trabalhando por aqui e quando você precisar de ajuda pode me chamar."]}]
 		}
 	]
 }

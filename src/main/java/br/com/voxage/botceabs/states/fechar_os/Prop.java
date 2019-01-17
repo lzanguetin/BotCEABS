@@ -3,7 +3,7 @@ package br.com.voxage.botceabs.states.fechar_os;
 import java.util.HashMap;
 import java.util.concurrent.CompletableFuture;
 
-import br.com.voxage.botceabs.BotCeabs;
+import br.com.voxage.botceabs.BotCEABS;
 import br.com.voxage.botceabs.models.DadosFluxo;
 import br.com.voxage.vbot.BotInputResult;
 import br.com.voxage.vbot.BotState;
@@ -11,12 +11,12 @@ import br.com.voxage.vbot.BotStateFlow;
 import br.com.voxage.vbot.BotStateInteractionType;
 
 public class Prop {
-	public static BotState load(BotCeabs bot) {
+	public static BotState load(BotCEABS bot) {
 		return new BotState("/") {{
 				setId("PROP");
 
 				setBotStateInteractionType(BotStateInteractionType.DIRECT_INPUT);
-				setMaxInputTime(BotCeabs.NO_INPUT_TIMEOUT); 
+				setMaxInputTime(BotCEABS.NO_INPUT_TIMEOUT); 
 				setMaxInputError(3);
 				setMaxNoInput(3);
 				
@@ -29,7 +29,7 @@ public class Prop {
 					switch(dadosFluxo.getOption()) {
 					case "1":
 						try {
-			                botInputResult.setIntentName(BotCeabs.STATES.MARCA);
+			                botInputResult.setIntentName(BotCEABS.STATES.MARCA);
 			            }
 		                catch(Exception e) {
 		                	botInputResult.setResult(BotInputResult.Result.ERROR);
@@ -37,7 +37,7 @@ public class Prop {
 						break;
 					case "2":
 						try {
-			                botInputResult.setIntentName(BotCeabs.STATES.LOCAL);
+			                botInputResult.setIntentName(BotCEABS.STATES.LOCAL);
 			            }
 		                catch(Exception e) {
 		                	botInputResult.setResult(BotInputResult.Result.ERROR);
@@ -45,7 +45,7 @@ public class Prop {
 						break;
 					case "3":
 						try {
-			                botInputResult.setIntentName(BotCeabs.STATES.MOTIVOREAG);
+			                botInputResult.setIntentName(BotCEABS.STATES.MOTIVOREAG);
 			            }
 		                catch(Exception e) {
 		                	botInputResult.setResult(BotInputResult.Result.ERROR);
@@ -67,9 +67,9 @@ public class Prop {
 				});
                 
                 setNextNavigationMap(new HashMap<String, String>(){{
-                	put(BotCeabs.STATES.MARCA, "#MARCA");
-                	put(BotCeabs.STATES.LOCAL, "#LOCAL");
-                	put(BotCeabs.STATES.MOTIVOREAG, "#MOTIVOREAG");
+                	put(BotCEABS.STATES.MARCA, "#MARCA");
+                	put(BotCEABS.STATES.LOCAL, "#LOCAL");
+                	put(BotCEABS.STATES.MOTIVOREAG, "#MOTIVOREAG");
                     put("MAX_INPUT_ERROR", "#PROP");
                     put("MAX_NO_INPUT", "/TERMINATE");
                 }});

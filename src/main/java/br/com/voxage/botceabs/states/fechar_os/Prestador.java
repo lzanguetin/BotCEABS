@@ -2,7 +2,7 @@ package br.com.voxage.botceabs.states.fechar_os;
 
 import java.util.HashMap;
 
-import br.com.voxage.botceabs.BotCeabs;
+import br.com.voxage.botceabs.BotCEABS;
 import br.com.voxage.botceabs.models.DadosFluxo;
 import br.com.voxage.vbot.BotInputResult;
 import br.com.voxage.vbot.BotState;
@@ -10,12 +10,12 @@ import br.com.voxage.vbot.BotStateFlow;
 import br.com.voxage.vbot.BotStateInteractionType;
 
 public class Prestador {
-	public static BotState load(BotCeabs bot) {
+	public static BotState load(BotCEABS bot) {
 		return new BotState("/") {{
 				setId("PREST");
 
 				setBotStateInteractionType(BotStateInteractionType.DIRECT_INPUT);
-				setMaxInputTime(BotCeabs.NO_INPUT_TIMEOUT); 
+				setMaxInputTime(BotCEABS.NO_INPUT_TIMEOUT); 
 				setMaxInputError(3);
 				setMaxNoInput(3);
 				
@@ -28,7 +28,7 @@ public class Prestador {
 					switch(dadosFluxo.getOption()) {
 					case "4":
 						try {
-			                botInputResult.setIntentName(BotCeabs.STATES.ATENDENTE);
+			                botInputResult.setIntentName(BotCEABS.STATES.ATENDENTE);
 			            }
 		                catch(Exception e) {
 		                	botInputResult.setResult(BotInputResult.Result.ERROR);
@@ -36,14 +36,14 @@ public class Prestador {
 						break;
 					case "5":
 						try {
-			                botInputResult.setIntentName(BotCeabs.STATES.ATENDENTE);
+			                botInputResult.setIntentName(BotCEABS.STATES.ATENDENTE);
 			            }
 		                catch(Exception e) {
 		                	botInputResult.setResult(BotInputResult.Result.ERROR);
 		                }
 						break;
 					default:
-						botInputResult.setIntentName(BotCeabs.STATES.CPF);
+						botInputResult.setIntentName(BotCEABS.STATES.CPF);
 					}			
 	
 					return botInputResult;
@@ -58,8 +58,8 @@ public class Prestador {
                 });
                 
                 setNextNavigationMap(new HashMap<String, String>(){{
-                	put(BotCeabs.STATES.CPF, "#CPF");
-                	put(BotCeabs.STATES.ATENDENTE, "#ATENDENTE");
+                	put(BotCEABS.STATES.CPF, "#CPF");
+                	put(BotCEABS.STATES.ATENDENTE, "#ATENDENTE");
                     put("MAX_NO_INPUT", "/TERMINATE");
                 }});
 		}};
