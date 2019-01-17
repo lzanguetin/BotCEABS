@@ -1,0 +1,15 @@
+{
+	"states":[
+		{
+			"id": "/APOIOTEC",
+			"idNavigationDetail": 140,
+			"initialMessages": ["Qual tipo de apoio voce precisa? Digite uma das opcoes a seguir:\n1 - Apoio NGP\n2 - Duvidas Tecnicas"],
+			"inputErrorResponses":[
+				{"order":"1", "messages":["Desculpe, mas esta opcao que voce escolheu nao existe. Escolha uma das opcoes e digite apenas o numero da opcao:\n1 - Apoio NGP\n2 - Duvidas Tecnicas"]},
+				{"order":"2", "messages": ["Desculpe, mas voce escolheu opcao que nao existe. Para eu te ajudar, escolha uma das opcoes a seguir e digite apenas o numero correspondente a ela::\n1 - Apoio NGP\n2 - Duvidas Tecnicas"]}
+			],
+			"maxInputErrorResponses":["Desculpe, mas voce nao digitou nenhuma opcao valida. Vou continuar trabalhando e quando voce precisar de ajuda pode me chamr."],
+			"noInputResponses":[{"order":"1", "messages":["Voce nao esta respondendo. Tudo bem, nao tem problema. Vou continuar trabalhando por aqui e quando voce precisar de ajuda pode me chamar."]}]
+		}
+	]
+}

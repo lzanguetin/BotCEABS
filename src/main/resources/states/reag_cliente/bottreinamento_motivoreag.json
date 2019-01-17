@@ -1,0 +1,15 @@
+{
+	"states":[
+		{
+			"id": "/MOTIVOREAG",
+			"idNavigationDetail":280,
+			"initialMessages": ["Qual o Motivo do Reagendamento?"],
+			"inputErrorResponses":[
+				{"order":"1", "messages":["Nao entendi o que voce falou. Sou um robo e ainda estou aprendendo algumas palavras. Preciso saber qual o motivo do reagendamento?"]},
+				{"order":"2", "messages": ["Ainda nao entendi o que voce quis dizer. Pode me informar por que vai reagendar o atendimento?"]}
+			],
+			"maxInputErrorResponses":["Me desculpe por nao conseguir entender sua resposta, mas nao se preocupe que vou prosseguir com o Atendimento."],
+			"noInputResponses":[{"order":"1", "messages":["Voce nao esta respondendo. Tudo bem, nao tem problema. Vou continuar trabalhando por aqui e quando voce precisar de ajuda pode me chamar."]}]
+		}
+	]
+}

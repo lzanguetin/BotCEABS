@@ -1,0 +1,12 @@
+{
+	"states":[
+		{
+			"id": "/START",
+			"idNavigationDetail": 1
+		},
+		{
+			"id": "/ATENDENTE",
+			"idNavigationDetail": 2
+		}
+	]
+}

@@ -1,0 +1,10 @@
+{
+	"states":[
+		{
+			"id": "/PREST",
+			"idNavigationDetail":290,
+			"initialMessages": ["Para finalizar, me informe o seu nome:"],
+			"noInputResponses":[{"order":"1", "messages":["Voce nao esta respondendo. Tudo bem, nao tem problema. Vou continuar trabalhando por aqui e quando voce precisar de ajuda pode me chamar."]}]
+		}
+	]
+}

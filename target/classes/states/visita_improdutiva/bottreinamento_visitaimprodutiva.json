@@ -1,0 +1,9 @@
+{
+	"states":[
+		{
+			"id": "/VISITAIMP",
+			"idNavigationDetail":120,
+			"initialMessages": ["Ok, vamos iniciar o registro da sua visita improdutiva. Digite as informacoes solicitadas conforme descritas na OS."]
+		}
+	]
+}

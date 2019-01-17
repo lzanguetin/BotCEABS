@@ -1,0 +1,15 @@
+{
+	"states":[
+		{
+			"id": "/CPF",
+			"idNavigationDetail":300,
+			"initialMessages": ["E agora o seu CPF:"],
+			"inputErrorResponses":[
+				{"order":"1", "messages":["O CPF digitado nao e valido. Digite novamente o seu CPF:"]},
+				{"order":"2", "messages": ["O CPF que voce digitou nao e valido. Vamos tentar uma ultima vez. Digite o seu CPF:"]}
+			],
+			"maxInputErrorResponses":["Mesmo seu CPF nao sendo valido, vou prosseguir com o Atendimento."],
+			"noInputResponses":[{"order":"1", "messages":["Voce não está respondendo. Tudo bem, não tem problema. Vou continuar trabalhando por aqui e quando voce precisar de ajuda pode me chamr."]}]
+		}
+	]
+}

@@ -1,0 +1,15 @@
+{
+	"states":[
+		{
+			"id": "/OS",
+			"idNavigationDetail": 180,
+			"initialMessages": ["Primeiro, digite a ordem de servico:"],
+			"inputErrorResponses":[
+				{"order":"1", "messages":["Acho que voce digitou alguma letra por engano, pois ela nao existe na OS, apenas numeros. Digite os numeros da ordem de servico."]},
+				{"order":"2", "messages": ["Olha so, a OS possui pelo menos 7 digitos, veja se nao ficou faltando algum numero e digite novamente."]}
+			],
+			"maxInputErrorResponses":["Me desculpe por nao conseguir entender sua resposta, mas nao se preocupe que vou prosseguir com o Atendimento."],
+			"noInputResponses":[{"order":"1", "messages":["Voce nao esta respondendo. Tudo bem, nao tem problema. Vou continuar trabalhando por aqui e quando voce precisar de ajuda pode me chamar."]}]
+		}
+	]
+}

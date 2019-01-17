@@ -1,0 +1,9 @@
+{
+	"states":[
+		{
+			"id": "/ATENDENTE",
+			"idNavigationDetail": 310,
+			"initialMessages":[]
+		}
+	]
+}

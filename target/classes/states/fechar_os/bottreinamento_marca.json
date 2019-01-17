@@ -1,0 +1,10 @@
+{
+	"states":[
+		{
+			"id": "/MARCA",
+			"idNavigationDetail":200,
+			"initialMessages": ["Informe a Marca e o Modelo do veiculo:"],
+			"noInputResponses":[{"order":"1", "messages":["Voce nao esta respondendo. Tudo bem, nao tem problema. Vou continuar trabalhando por aqui e quando voce precisar de ajuda pode me chamar."]}]
+		}
+	]
+}

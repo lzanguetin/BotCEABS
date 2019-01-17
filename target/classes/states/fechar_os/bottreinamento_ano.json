@@ -1,0 +1,10 @@
+{
+	"states":[
+		{
+			"id": "/ANO",
+			"idNavigationDetail":210,
+			"initialMessages": ["Informe o ano de fabricacao e o modelo no formato, 20XX/20XX:"],
+			"noInputResponses":[{"order":"1", "messages":["Voce nao esta respondendo. Tudo bem, nao tem problema. Vou continuar trabalhando por aqui e quando voce precisar de ajuda pode me chamar."]}]
+		}
+	]
+}

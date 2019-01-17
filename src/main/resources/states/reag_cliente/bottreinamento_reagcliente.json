@@ -1,0 +1,9 @@
+{
+	"states":[
+		{
+			"id": "/REAGCLIENTE",
+			"idNavigationDetail":130,
+			"initialMessages": ["Ok, vamos iniciar o registro do reagendamento do cliente. Digite as informacoes solicitadas conforme descritas na OS."]
+		}
+	]
+}

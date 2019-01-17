@@ -1,0 +1,10 @@
+{
+	"states":[
+		{
+			"id": "/PLACA",
+			"idNavigationDetail":230,
+			"initialMessages": ["Informe a placa do veiculo. Se nao houver, digite Nao Possui:"],
+			"noInputResponses":[{"order":"1", "messages":["Voce nao esta respondendo. Tudo bem, nao tem problema. Vou continuar trabalhando por aqui e quando voce precisar de ajuda pode me chamar."]}]
+		}
+	]
+}
