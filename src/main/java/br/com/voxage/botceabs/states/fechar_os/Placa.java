@@ -1,20 +1,20 @@
-package br.com.voxage.bottreinamento.states.fechar_os;
+package br.com.voxage.botceabs.states.fechar_os;
 
 import java.util.HashMap;
 
-import br.com.voxage.bottreinamento.BotTreinamento;
+import br.com.voxage.botceabs.BotCeabs;
 import br.com.voxage.vbot.BotInputResult;
 import br.com.voxage.vbot.BotState;
 import br.com.voxage.vbot.BotStateFlow;
 import br.com.voxage.vbot.BotStateInteractionType;
 
 public class Placa {
-	public static BotState load(BotTreinamento bot) {
+	public static BotState load(BotCeabs bot) {
 		return new BotState("/") {{
 				setId("PLACA");
 
 				setBotStateInteractionType(BotStateInteractionType.DIRECT_INPUT);
-				setMaxInputTime(BotTreinamento.NO_INPUT_TIMEOUT); 
+				setMaxInputTime(BotCeabs.NO_INPUT_TIMEOUT); 
 				setMaxInputError(3);
 				setMaxNoInput(3);
 				
@@ -24,7 +24,7 @@ public class Placa {
 					String userInput = userInputs.getConcatenatedInputs();
 					
 					botInputResult.setResult(BotInputResult.Result.OK);
-					botInputResult.setIntentName(BotTreinamento.STATES.CHASSI);
+					botInputResult.setIntentName(BotCeabs.STATES.CHASSI);
 	
 					return botInputResult;
 				});
@@ -38,7 +38,7 @@ public class Placa {
                 });
                 
                 setNextNavigationMap(new HashMap<String, String>(){{
-                	put(BotTreinamento.STATES.CHASSI, "#CHASSI");
+                	put(BotCeabs.STATES.CHASSI, "#CHASSI");
                     put("MAX_NO_INPUT", "/TERMINATE");
                 }});
 		}};

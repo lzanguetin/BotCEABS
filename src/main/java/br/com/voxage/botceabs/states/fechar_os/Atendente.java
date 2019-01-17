@@ -1,11 +1,11 @@
-package br.com.voxage.bottreinamento.states.fechar_os;
+package br.com.voxage.botceabs.states.fechar_os;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.stream.Collectors;
 
-import br.com.voxage.bottreinamento.BotTreinamento;
+import br.com.voxage.botceabs.BotCeabs;
 import br.com.voxage.chat.botintegration.entities.BotMessage;
 import br.com.voxage.vbot.BotInputResult;
 import br.com.voxage.vbot.BotState;
@@ -13,7 +13,7 @@ import br.com.voxage.vbot.BotStateFlow;
 import br.com.voxage.vbot.BotStateInteractionType;
 
 public class Atendente{
-	public static BotState load(BotTreinamento bot) {
+	public static BotState load(BotCeabs bot) {
 		return new BotState("/") {{
 				setId("ATENDENTE");
 				

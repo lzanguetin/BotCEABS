@@ -1,4 +1,4 @@
-package br.com.voxage.bottreinamento.models;
+package br.com.voxage.botceabs.models;
 
 import br.com.voxage.vbot.BotInputResult;
 

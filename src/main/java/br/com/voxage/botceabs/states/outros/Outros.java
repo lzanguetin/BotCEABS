@@ -1,22 +1,22 @@
-package br.com.voxage.bottreinamento.states.outros;
+package br.com.voxage.botceabs.states.outros;
 
 import java.util.HashMap;
 
-import br.com.voxage.bottreinamento.BotTreinamento;
+import br.com.voxage.botceabs.BotCeabs;
 import br.com.voxage.vbot.BotInputResult;
 import br.com.voxage.vbot.BotState;
 import br.com.voxage.vbot.BotStateFlow;
 import br.com.voxage.vbot.BotStateInteractionType;
 
 public class Outros {
-	public static BotState load(BotTreinamento bot) {
+	public static BotState load(BotCeabs bot) {
 		return new BotState("/") {{
 				setId("OUTROS");
 
 				setBotStateInteractionType(BotStateInteractionType.NO_INPUT);
 
 				setPreFunction(botState ->{
-					bot.setLastState(BotTreinamento.STATES.START);
+					bot.setLastState(BotCeabs.STATES.START);
 					
 					BotStateFlow botStateFlow = new BotStateFlow();
 					botStateFlow.flow = BotStateFlow.Flow.CONTINUE;

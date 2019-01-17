@@ -1,9 +1,9 @@
-package br.com.voxage.bottreinamento;
+package br.com.voxage.botceabs;
 
 import java.util.HashMap;
 import java.util.Map;
 
-import br.com.voxage.bottreinamento.models.DadosFluxo;
+import br.com.voxage.botceabs.models.DadosFluxo;
 import br.com.voxage.chat.botintegration.ISearchEngine;
 import br.com.voxage.chat.botintegration.ISearchEngineCredentials;
 import br.com.voxage.chat.botintegration.TextSearchEngine;
@@ -15,8 +15,8 @@ import br.com.voxage.vbot.BotStateInteractionType;
 import br.com.voxage.vbot.VBot;
 import br.com.voxage.vbot.utils.ClassFinder;
 
-@Bot(name="BotTreinamento")
-public class BotTreinamento extends VBot {
+@Bot(name="BotCeabs")
+public class BotCeabs extends VBot {
 	
 	public static int NO_INPUT_TIMEOUT = 180000;
 	
@@ -49,7 +49,7 @@ public class BotTreinamento extends VBot {
 	    	String OUTROS = "outros";
 	}
 	 
-	public BotTreinamento() {
+	public BotCeabs() {
 		this.dadosFluxo = new DadosFluxo();
 	}
 	 
@@ -98,14 +98,14 @@ public class BotTreinamento extends VBot {
 
 	@Override
 	protected String getPackageName() {
-		return "br.com.voxage.bottreinamento";
+		return "br.com.voxage.botceabs";
 	}
 
 	@Override
 	public void loadStates() {
 		BotContext botContext = new BotContext();
 		Map<String, BotState> m = new HashMap<>();
-		m.putAll(ClassFinder.loadAllStates("br.com.voxage.bottreinamento.states", BotTreinamento.class, BotTreinamento.this));
+		m.putAll(ClassFinder.loadAllStates("br.com.voxage.botceabs.states", BotCeabs.class, BotCeabs.this));
 		botContext.setId("/");
 		botContext.setContextNavigationMap(new HashMap<String, String>() {			
         });

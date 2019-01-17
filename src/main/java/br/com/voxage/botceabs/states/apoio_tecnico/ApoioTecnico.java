@@ -1,22 +1,22 @@
-package br.com.voxage.bottreinamento.states.apoio_tecnico;
+package br.com.voxage.botceabs.states.apoio_tecnico;
 
 import java.util.HashMap;
 
-import br.com.voxage.bottreinamento.BotTreinamento;
+import br.com.voxage.botceabs.BotCeabs;
 import br.com.voxage.vbot.BotInputResult;
 import br.com.voxage.vbot.BotState;
 import br.com.voxage.vbot.BotStateFlow;
 import br.com.voxage.vbot.BotStateInteractionType;
 
 public class ApoioTecnico {
-	public static BotState load(BotTreinamento bot) {
+	public static BotState load(BotCeabs bot) {
 		return new BotState("/") {{
 				setId("APOIOTEC");
 
 				setBotStateInteractionType(BotStateInteractionType.DIRECT_INPUT);
 
 				setPreFunction(botState ->{
-					bot.setLastState(BotTreinamento.STATES.START);
+					bot.setLastState(BotCeabs.STATES.START);
 					
 					BotStateFlow botStateFlow = new BotStateFlow();
 					botStateFlow.flow = BotStateFlow.Flow.CONTINUE;
@@ -32,10 +32,10 @@ public class ApoioTecnico {
 					
 					switch(userInput) {
 					case "1":
-						botInputResult.setIntentName(BotTreinamento.STATES.NGP);
+						botInputResult.setIntentName(BotCeabs.STATES.NGP);
 						break;
 					case "2":
-						botInputResult.setIntentName(BotTreinamento.STATES.TEC);
+						botInputResult.setIntentName(BotCeabs.STATES.TEC);
 						break;
 					default:
 						botInputResult.setResult(BotInputResult.Result.ERROR);
@@ -52,8 +52,8 @@ public class ApoioTecnico {
                 });
                 
                 setNextNavigationMap(new HashMap<String, String>(){{
-                	put(BotTreinamento.STATES.NGP, "/NGP");
-                	put(BotTreinamento.STATES.TEC, "/TEC");
+                	put(BotCeabs.STATES.NGP, "/NGP");
+                	put(BotCeabs.STATES.TEC, "/TEC");
                 	put("MAX", "/TERMINATE");
                     put("MAX_NO_INPUT", "/TERMINATE");
                 }});

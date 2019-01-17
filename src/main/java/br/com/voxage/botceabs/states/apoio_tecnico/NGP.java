@@ -1,22 +1,22 @@
-package br.com.voxage.bottreinamento.states.apoio_tecnico;
+package br.com.voxage.botceabs.states.apoio_tecnico;
 
 import java.util.HashMap;
 
-import br.com.voxage.bottreinamento.BotTreinamento;
+import br.com.voxage.botceabs.BotCeabs;
 import br.com.voxage.vbot.BotInputResult;
 import br.com.voxage.vbot.BotState;
 import br.com.voxage.vbot.BotStateFlow;
 import br.com.voxage.vbot.BotStateInteractionType;
 
 public class NGP {
-	public static BotState load(BotTreinamento bot) {
+	public static BotState load(BotCeabs bot) {
 		return new BotState("/") {{
 				setId("NGP");
 
 				setBotStateInteractionType(BotStateInteractionType.NO_INPUT);
 
 				setPreFunction(botState ->{
-					bot.setLastState(BotTreinamento.STATES.APOIOTEC);
+					bot.setLastState(BotCeabs.STATES.APOIOTEC);
 					
 					BotStateFlow botStateFlow = new BotStateFlow();
 					botStateFlow.flow = BotStateFlow.Flow.CONTINUE;
