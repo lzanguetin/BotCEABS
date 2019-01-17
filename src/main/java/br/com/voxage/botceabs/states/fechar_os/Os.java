@@ -2,8 +2,10 @@ package br.com.voxage.botceabs.states.fechar_os;
 
 import java.util.HashMap;
 
+import br.com.voxage.basicvalidators.CPFValidator;
 import br.com.voxage.botceabs.BotCEABS;
 import br.com.voxage.botceabs.models.DadosFluxo;
+import br.com.voxage.botceabs.models.Validators;
 import br.com.voxage.vbot.BotInputResult;
 import br.com.voxage.vbot.BotState;
 import br.com.voxage.vbot.BotStateFlow;
@@ -25,7 +27,12 @@ public class Os {
 					botInputResult.setResult(BotInputResult.Result.OK);			
 					String userInput = userInputs.getConcatenatedInputs();
 					
-					dadosFluxo.setOs(userInput);
+					if((Validators.isValidOSNum(userInput)) == false){
+						botInputResult.setResult(BotInputResult.Result.ERROR);
+					}else {
+						dadosFluxo.setOs(userInput);
+						botInputResult.setResult(BotInputResult.Result.OK);
+					}
 					
 					switch(dadosFluxo.getOption()) {
 					case "4":

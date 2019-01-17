@@ -2,6 +2,8 @@ package br.com.voxage.botceabs.states.visita_improdutiva;
 
 import java.util.HashMap;
 
+import br.com.voxage.basicvalidators.CPFValidator;
+import br.com.voxage.basicvalidators.YesNoValidator;
 import br.com.voxage.botceabs.BotCEABS;
 import br.com.voxage.botceabs.models.DadosFluxo;
 import br.com.voxage.vbot.BotInputResult;
@@ -27,9 +29,11 @@ public class Local {
 					
 					dadosFluxo.setLocal(userInput);
 					
-					botInputResult.setResult(BotInputResult.Result.OK);
-					botInputResult.setIntentName(BotCEABS.STATES.CONTATO);
-	
+					if ((dadosFluxo.getLocal().equalsIgnoreCase("SIM")) || (dadosFluxo.getLocal().equalsIgnoreCase("NÃO"))){
+						botInputResult.setIntentName(BotCEABS.STATES.CONTATO);						
+					}else {
+						botInputResult.setResult(BotInputResult.Result.ERROR);
+					}					
 					return botInputResult;
 				});
 				
