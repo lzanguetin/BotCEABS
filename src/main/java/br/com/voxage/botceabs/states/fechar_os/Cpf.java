@@ -4,6 +4,7 @@ import java.util.HashMap;
 
 import br.com.voxage.basicvalidators.CPFValidator;
 import br.com.voxage.botceabs.BotCEABS;
+import br.com.voxage.botceabs.models.DadosFluxo;
 import br.com.voxage.vbot.BotInputResult;
 import br.com.voxage.vbot.BotState;
 import br.com.voxage.vbot.BotStateFlow;
@@ -21,14 +22,15 @@ public class Cpf{
 				
 				setProcessDirectInputFunction((botState, userInputs) -> {
 					BotInputResult botInputResult = new BotInputResult();
+					DadosFluxo dadosFluxo = bot.getDadosFluxo();
 					botInputResult.setResult(BotInputResult.Result.OK);			
 					String userInput = userInputs.getConcatenatedInputs().replaceAll("\\D+", "");;
 					
 					if((CPFValidator.isValidCPF(userInput)) == false) {
 						botInputResult.setResult(BotInputResult.Result.ERROR);
 					}else {
+						dadosFluxo.setCpf(userInput);
 						botInputResult.setResult(BotInputResult.Result.OK);
-						bot.getUserSession().put("NOME", userInputs.getConcatenatedInputs());
 					}
 					
 					return botInputResult;

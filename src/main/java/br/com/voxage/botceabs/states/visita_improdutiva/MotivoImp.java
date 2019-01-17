@@ -3,6 +3,7 @@ package br.com.voxage.botceabs.states.visita_improdutiva;
 import java.util.HashMap;
 
 import br.com.voxage.botceabs.BotCEABS;
+import br.com.voxage.botceabs.models.DadosFluxo;
 import br.com.voxage.vbot.BotInputResult;
 import br.com.voxage.vbot.BotState;
 import br.com.voxage.vbot.BotStateFlow;
@@ -20,8 +21,11 @@ public class MotivoImp {
 				
 				setProcessDirectInputFunction((botState, userInputs) -> {
 					BotInputResult botInputResult = new BotInputResult();
+					DadosFluxo dadosFluxo = bot.getDadosFluxo();
 					botInputResult.setResult(BotInputResult.Result.OK);			
 					String userInput = userInputs.getConcatenatedInputs();
+					
+					dadosFluxo.setMotivoI(userInput);
 					
 					botInputResult.setResult(BotInputResult.Result.OK);
 					botInputResult.setIntentName(BotCEABS.STATES.PREST);

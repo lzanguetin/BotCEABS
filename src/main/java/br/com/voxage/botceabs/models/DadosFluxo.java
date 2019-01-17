@@ -5,14 +5,14 @@ import br.com.voxage.vbot.BotInputResult;
 public class DadosFluxo {
     private String cpf;
     private String os;
-	private String proprietario;
+	private String prop;
 	private String marca;
 	private String ano;
 	private String cor;
 	private String placa;
 	private String option;
 	private String chassi;
-	private String prestador;
+	private String prest;
 	private String local;
 	private String contato;
 	private String motivoi;
@@ -35,12 +35,12 @@ public class DadosFluxo {
         this.os = os;
     }
     
-    public String getProprietario() {
-    	return proprietario;
+    public String getProp() {
+    	return prop;
     }
     
-    public void setProprietario(String proprietario) {
-    	this.proprietario = proprietario;
+    public void setProp(String prop) {
+    	this.prop = prop;
     }
     
     public String getMarca() {
@@ -75,12 +75,12 @@ public class DadosFluxo {
     	this.chassi = chassi;
     }
     
-    public String getPrestador() {
-    	return prestador;
+    public String getPrest() {
+    	return prest;
     }
     
-    public void setPrestador(String prestador) {
-    	this.prestador = prestador;
+    public void setPrest(String prest) {
+    	this.prest = prest;
     }
     
     public String getLocal() {

@@ -26,6 +26,8 @@ public class Prop {
 					botInputResult.setResult(BotInputResult.Result.OK);			
 					String userInput = userInputs.getConcatenatedInputs();
 					
+					dadosFluxo.setProp(userInput);
+					
 					switch(dadosFluxo.getOption()) {
 					case "1":
 						try {

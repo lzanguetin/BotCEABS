@@ -25,6 +25,8 @@ public class Os {
 					botInputResult.setResult(BotInputResult.Result.OK);			
 					String userInput = userInputs.getConcatenatedInputs();
 					
+					dadosFluxo.setOs(userInput);
+					
 					switch(dadosFluxo.getOption()) {
 					case "4":
 						try {

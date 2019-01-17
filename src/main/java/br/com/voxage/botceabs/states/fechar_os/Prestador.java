@@ -25,6 +25,8 @@ public class Prestador {
 					botInputResult.setResult(BotInputResult.Result.OK);			
 					String userInput = userInputs.getConcatenatedInputs();
 					
+					dadosFluxo.setPrest(userInput);
+					
 					switch(dadosFluxo.getOption()) {
 					case "4":
 						try {
