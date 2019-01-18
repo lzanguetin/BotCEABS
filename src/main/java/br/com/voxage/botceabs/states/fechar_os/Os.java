@@ -29,12 +29,20 @@ public class Os {
 					String userInput = userInputs.getConcatenatedInputs();
 					
 					if((Validators.isValidOSNum(userInput)) == false){
+						botInputResult.setResult(BotInputResult.Result.ERROR);
+					}else {
 						dadosFluxo.setOs(userInput);
 						botInputResult.setResult(BotInputResult.Result.OK);
-					}else {
-						botInputResult.setResult(BotInputResult.Result.ERROR);
 					}
 					
+					//if(NumberValidator.hasOnlyDigitsWithLength(userInput, userInput.length())){
+						//dadosFluxo.setOs(userInput);
+						//botInputResult.setResult(BotInputResult.Result.ERROR);
+					//}
+					//else {
+					//	botInputResult.setResult(BotInputResult.Result.ERROR);
+					//}
+										
 					switch(dadosFluxo.getOption()) {
 					case "4":
 						try {
