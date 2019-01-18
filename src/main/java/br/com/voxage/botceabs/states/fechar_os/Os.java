@@ -3,6 +3,7 @@ package br.com.voxage.botceabs.states.fechar_os;
 import java.util.HashMap;
 
 import br.com.voxage.basicvalidators.CPFValidator;
+import br.com.voxage.basicvalidators.NumberValidator;
 import br.com.voxage.botceabs.BotCEABS;
 import br.com.voxage.botceabs.models.DadosFluxo;
 import br.com.voxage.botceabs.models.Validators;
@@ -68,7 +69,7 @@ public class Os {
                 setNextNavigationMap(new HashMap<String, String>(){{
                 	put(BotCEABS.STATES.PROP, "#PROP");
                 	put(BotCEABS.STATES.PREST, "#PREST");
-                    put("MAX_INPUT_ERROR", "#PROP");
+                	put("MAX_INPUT_ERROR", "#PROP");
                     put("MAX_NO_INPUT", "/TERMINATE");
                 }});
 		}};
