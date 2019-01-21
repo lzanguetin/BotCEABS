@@ -1,7 +1,6 @@
-package br.com.voxage.botceabs.states.fechar_os;
+package br.com.voxage.botceabs.states.global;
 
 import java.util.HashMap;
-import java.util.concurrent.CompletableFuture;
 
 import br.com.voxage.botceabs.BotCEABS;
 import br.com.voxage.botceabs.models.DadosFluxo;
@@ -11,6 +10,7 @@ import br.com.voxage.vbot.BotStateFlow;
 import br.com.voxage.vbot.BotStateInteractionType;
 
 public class Prop {
+	@SuppressWarnings("serial")
 	public static BotState load(BotCEABS bot) {
 		return new BotState("/") {{
 				setId("PROP");
@@ -72,7 +72,6 @@ public class Prop {
                 	put(BotCEABS.STATES.MARCA, "#MARCA");
                 	put(BotCEABS.STATES.LOCAL, "#LOCAL");
                 	put(BotCEABS.STATES.MOTIVOREAG, "#MOTIVOREAG");
-                    put("MAX_INPUT_ERROR", "#PROP");
                     put("MAX_NO_INPUT", "/TERMINATE");
                 }});
 		}};

@@ -1,4 +1,4 @@
-package br.com.voxage.botceabs.states.fechar_os;
+package br.com.voxage.botceabs.states.global;
 
 import java.util.HashMap;
 
@@ -9,28 +9,40 @@ import br.com.voxage.vbot.BotState;
 import br.com.voxage.vbot.BotStateFlow;
 import br.com.voxage.vbot.BotStateInteractionType;
 
-public class Ano {
+public class OsPath {
 	@SuppressWarnings("serial")
 	public static BotState load(BotCEABS bot) {
 		return new BotState("/") {{
-				setId("ANO");
-
-				setBotStateInteractionType(BotStateInteractionType.DIRECT_INPUT);
-				setMaxInputTime(BotCEABS.NO_INPUT_TIMEOUT); 
-				setMaxInputError(3);
-				setMaxNoInput(3);
+				setId("OSPATH");
+				
+				setBotStateInteractionType(BotStateInteractionType.NO_INPUT);
+				setMaxInputTime(BotCEABS.NO_INPUT_TIMEOUT);
 				
 				setProcessDirectInputFunction((botState, userInputs) -> {
 					BotInputResult botInputResult = new BotInputResult();
 					DadosFluxo dadosFluxo = bot.getDadosFluxo();
 					botInputResult.setResult(BotInputResult.Result.OK);			
-					String userInput = userInputs.getConcatenatedInputs();
 					
-					dadosFluxo.setAno(userInput);
-					
-					botInputResult.setResult(BotInputResult.Result.OK);
-					botInputResult.setIntentName(BotCEABS.STATES.COR);
-	
+					switch(dadosFluxo.getOption()) {
+					case "4":
+						try {
+			                botInputResult.setIntentName(BotCEABS.STATES.PREST);
+			            }
+		                catch(Exception e) {
+		                	botInputResult.setResult(BotInputResult.Result.ERROR);
+		                }
+						break;
+					case "5":
+						try {
+			                botInputResult.setIntentName(BotCEABS.STATES.PREST);
+			            }
+		                catch(Exception e) {
+		                	botInputResult.setResult(BotInputResult.Result.ERROR);
+		                }
+						break;
+					default:
+						botInputResult.setIntentName(BotCEABS.STATES.PROP);
+					}			
 					return botInputResult;
 				});
 				
@@ -41,12 +53,12 @@ public class Ano {
                 	
                 	return botStateFlow;
                 });
-                
+				
                 setNextNavigationMap(new HashMap<String, String>(){{
-                	put(BotCEABS.STATES.COR, "#COR");
-                    put("MAX_NO_INPUT", "/TERMINATE");
+                	put(BotCEABS.STATES.PROP, "#PROP");
+                	put(BotCEABS.STATES.PREST, "#PREST");
                 }});
 		}};
 	}
+
 }
-	

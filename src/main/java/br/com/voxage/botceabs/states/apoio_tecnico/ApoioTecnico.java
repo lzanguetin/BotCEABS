@@ -9,6 +9,7 @@ import br.com.voxage.vbot.BotStateFlow;
 import br.com.voxage.vbot.BotStateInteractionType;
 
 public class ApoioTecnico {
+	@SuppressWarnings("serial")
 	public static BotState load(BotCEABS bot) {
 		return new BotState("/") {{
 				setId("APOIOTEC");
@@ -54,7 +55,7 @@ public class ApoioTecnico {
                 setNextNavigationMap(new HashMap<String, String>(){{
                 	put(BotCEABS.STATES.NGP, "/NGP");
                 	put(BotCEABS.STATES.TEC, "/TEC");
-                	put("MAX", "/TERMINATE");
+                	put("MAX_INPUT_ERROR", "/TERMINATE");
                     put("MAX_NO_INPUT", "/TERMINATE");
                 }});
 		}};

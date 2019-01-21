@@ -3,12 +3,12 @@ package br.com.voxage.botceabs.states.fechar_os;
 import java.util.HashMap;
 
 import br.com.voxage.botceabs.BotCEABS;
-import br.com.voxage.vbot.BotInputResult;
 import br.com.voxage.vbot.BotState;
 import br.com.voxage.vbot.BotStateFlow;
 import br.com.voxage.vbot.BotStateInteractionType;
 
 public class FecharOS {
+	@SuppressWarnings("serial")
 	public static BotState load(BotCEABS bot) {
 		return new BotState("/") {{
 				setId("FECHAROS");

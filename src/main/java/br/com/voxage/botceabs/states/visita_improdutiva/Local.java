@@ -2,8 +2,6 @@ package br.com.voxage.botceabs.states.visita_improdutiva;
 
 import java.util.HashMap;
 
-import br.com.voxage.basicvalidators.CPFValidator;
-import br.com.voxage.basicvalidators.YesNoValidator;
 import br.com.voxage.botceabs.BotCEABS;
 import br.com.voxage.botceabs.models.DadosFluxo;
 import br.com.voxage.vbot.BotInputResult;
@@ -12,6 +10,7 @@ import br.com.voxage.vbot.BotStateFlow;
 import br.com.voxage.vbot.BotStateInteractionType;
 
 public class Local {
+	@SuppressWarnings("serial")
 	public static BotState load(BotCEABS bot) {
 		return new BotState("/") {{
 				setId("LOCAL");

@@ -1,8 +1,6 @@
 package br.com.voxage.botceabs.states._start;
 
 import java.util.HashMap;
-import java.util.concurrent.CompletableFuture;
-
 import br.com.voxage.botceabs.BotCEABS;
 import br.com.voxage.botceabs.models.DadosFluxo;
 import br.com.voxage.vbot.BotInputResult;
@@ -11,6 +9,7 @@ import br.com.voxage.vbot.BotStateFlow;
 import br.com.voxage.vbot.BotStateInteractionType;
 
 public class Start{
+	@SuppressWarnings("serial")
 	public static BotState load(BotCEABS bot) {
 		return new BotState("/") {{
 				setId("START");

@@ -15,6 +15,7 @@ import br.com.voxage.vbot.BotStateInteractionType;
 import br.com.voxage.vbot.VBot;
 import br.com.voxage.vbot.utils.ClassFinder;
 
+@SuppressWarnings("serial")
 @Bot(name="BotCEABS")
 public class BotCEABS extends VBot {
 	
@@ -47,6 +48,7 @@ public class BotCEABS extends VBot {
 	    	String NGP = "ngp";
 	    	String TEC = "tec";
 	    	String OUTROS = "outros";
+	    	String OSPATH = "ospath";
 	}
 	 
 	public BotCEABS() {

@@ -2,8 +2,6 @@ package br.com.voxage.botceabs.states.global;
 
 import java.util.HashMap;
 
-import br.com.voxage.basicvalidators.CPFValidator;
-import br.com.voxage.basicvalidators.NumberValidator;
 import br.com.voxage.botceabs.BotCEABS;
 import br.com.voxage.botceabs.models.DadosFluxo;
 import br.com.voxage.botceabs.models.Validators;
@@ -13,6 +11,7 @@ import br.com.voxage.vbot.BotStateFlow;
 import br.com.voxage.vbot.BotStateInteractionType;
 
 public class Os {
+	@SuppressWarnings("serial")
 	public static BotState load(BotCEABS bot) {
 		return new BotState("/") {{
 				setId("OS");
@@ -69,7 +68,7 @@ public class Os {
                 setNextNavigationMap(new HashMap<String, String>(){{
                 	put(BotCEABS.STATES.PROP, "#PROP");
                 	put(BotCEABS.STATES.PREST, "#PREST");
-                	put("MAX_INPUT_ERROR", "#PROP");
+                	put("MAX_INPUT_ERROR", "#OSPATH");
                     put("MAX_NO_INPUT", "/TERMINATE");
                 }});
 		}};

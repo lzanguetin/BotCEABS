@@ -1,18 +1,13 @@
 package br.com.voxage.botceabs.states.global;
 
-import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
-import java.util.stream.Collectors;
-
 import br.com.voxage.botceabs.BotCEABS;
-import br.com.voxage.chat.botintegration.entities.BotMessage;
-import br.com.voxage.vbot.BotInputResult;
 import br.com.voxage.vbot.BotState;
 import br.com.voxage.vbot.BotStateFlow;
 import br.com.voxage.vbot.BotStateInteractionType;
 
 public class Atendente{
+	@SuppressWarnings("serial")
 	public static BotState load(BotCEABS bot) {
 		return new BotState("/") {{
 				setId("ATENDENTE");
