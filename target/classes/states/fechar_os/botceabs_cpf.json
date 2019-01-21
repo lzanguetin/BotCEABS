@@ -5,11 +5,11 @@
 			"idNavigationDetail":300,
 			"initialMessages": ["E agora o seu CPF:"],
 			"inputErrorResponses":[
-				{"order":"1", "messages":["O CPF digitado não é válido. Digite novamente o seu CPF:"]},
-				{"order":"2", "messages": ["O CPF que você digitou não e válido. Vamos tentar uma última vez. Digite o seu CPF:"]}
+				{"order":"1", "messages":["O CPF digitado nÃ£o Ã© vÃ¡lido. Digite novamente o seu CPF:"]},
+				{"order":"2", "messages": ["O CPF que vocÃª digitou nÃ£o e vÃ¡lido. Vamos tentar uma Ãºltima vez. Digite o seu CPF:"]}
 			],
-			"maxInputErrorResponses":["Mesmo seu CPF não sendo válido, vou prosseguir com o Atendimento."],
-			"noInputResponses":[{"order":"1", "messages":["Você não está respondendo. Tudo bem, não tem problema. Vou continuar trabalhando por aqui e quando você precisar de ajuda pode me chamar."]}]
+			"maxInputErrorResponses":["Mesmo seu CPF nÃ£o sendo vÃ¡lido, vou prosseguir com o Atendimento."],
+			"noInputResponses":[{"order":"1", "messages":["VocÃª nÃ£o estÃ¡ respondendo. Tudo bem, nÃ£o tem problema. Vou continuar trabalhando por aqui e quando vocÃª precisar de ajuda pode me chamar."]}]
 		}
 	]
 }

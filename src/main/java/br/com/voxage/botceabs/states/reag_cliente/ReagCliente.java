@@ -33,7 +33,7 @@ public class ReagCliente {
                 });
                 
                 setNextNavigationMap(new HashMap<String, String>(){{
-                	put("OS", "/OS");
+                	put("OS", "#OS");
                 }});
 		}};
 	}

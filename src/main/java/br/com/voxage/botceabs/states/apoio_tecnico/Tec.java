@@ -33,7 +33,7 @@ public class Tec {
                 });
                 
                 setNextNavigationMap(new HashMap<String, String>(){{
-                	put("OS", "/OS");
+                	put("OS", "#OS");
                 }});
 		}};
 	}

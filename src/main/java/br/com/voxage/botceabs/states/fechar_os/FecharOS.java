@@ -33,7 +33,7 @@ public class FecharOS {
                 });
                 
                 setNextNavigationMap(new HashMap<String, String>(){{
-                	put("OS", "/OS");
+                	put("OS", "#OS");
                 }});
 		}};
 	}

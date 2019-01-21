@@ -33,7 +33,7 @@ public class VisitaImprodutiva {
                 });
                 
                 setNextNavigationMap(new HashMap<String, String>(){{
-                	put("OS", "/OS");
+                	put("OS", "#OS");
                 }});
 		}};
 	}
