@@ -49,6 +49,12 @@ public class BotCEABS extends VBot {
 	    	String TEC = "tec";
 	    	String OUTROS = "outros";
 	    	String OSPATH = "ospath";
+	    	
+			String CEABS_OS = "transfer_to_attendant(1)";
+		    String CEABS_IMPRODUTIVA = "transfer_to_attendant(2)";
+			String CEABS_REAGENDAMENTO = "transfer_to_attendant(3)";
+		    String CEABS_APOIO = "transfer_to_attendant(4)";
+			String CEABS_OUTROS = "transfer_to_attendant(5)";
 	}
 	 
 	public BotCEABS() {

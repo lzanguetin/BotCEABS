@@ -3,7 +3,45 @@
 		{
 			"id": "/ATENDENTE",
 			"idNavigationDetail": 310,
-			"initialMessages":[]
+			"initialMessages":[
+			"Tudo bem. Só um momento, vou transferir seu atendimento para outra pessoa."
+			],
+			"customMessages":[
+              {
+                "id":"state_fecharos",
+                "messages": [
+                	{"order":"1", "messages":["Ok, vou te transferir para a atendente 1"]}
+                ]
+              },
+               
+              {
+              	"id":"state_visitaimp",
+               	"messages": [
+               		{"order":"1", "messages":["Ok, vou te transferir para a atendente 2"]}
+               	]
+              },
+               
+              {
+              	"id":"state_reagcliente",
+               	"messages": [
+               		{"order":"1", "messages":["Ok, vou te transferir para a atendente 3"]}
+               	]
+              },
+              
+              {
+                "id":"state_apoiotec",
+                "messages": [
+                  	{"order":"1", "messages":["Ok, vou te transferir para a atendente 4"]}
+                ]
+              },
+              
+              {
+              	"id":"state_outros",
+                "messages": [
+               		{"order":"1", "messages":["Ok, vou te transferir para a atendente 5"]}
+				]
+			  }
+			]
 		}
 	]
 }
