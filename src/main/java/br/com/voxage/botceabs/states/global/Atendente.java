@@ -1,4 +1,4 @@
-package br.com.voxage.botceabs.states.fechar_os;
+package br.com.voxage.botceabs.states.global;
 
 import java.util.ArrayList;
 import java.util.HashMap;
