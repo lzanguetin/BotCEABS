@@ -5,7 +5,6 @@ C:\Users\leonardo.zanguetin\git\BotCEABS\src\main\java\br\com\voxage\botceabs\st
 C:\Users\leonardo.zanguetin\git\BotCEABS\src\main\java\br\com\voxage\botceabs\states\fechar_os\Cor.java
 C:\Users\leonardo.zanguetin\git\BotCEABS\src\main\java\br\com\voxage\botceabs\states\visita_improdutiva\MotivoImp.java
 C:\Users\leonardo.zanguetin\git\BotCEABS\src\main\java\br\com\voxage\botceabs\states\apoio_tecnico\Tec.java
-C:\Users\leonardo.zanguetin\git\BotCEABS\src\main\java\br\com\voxage\botceabs\states\fechar_os\Prop.java
 C:\Users\leonardo.zanguetin\git\BotCEABS\src\main\java\br\com\voxage\botceabs\states\fechar_os\Marca.java
 C:\Users\leonardo.zanguetin\git\BotCEABS\src\main\java\br\com\voxage\botceabs\states\fechar_os\Chassi.java
 C:\Users\leonardo.zanguetin\git\BotCEABS\src\main\java\br\com\voxage\botceabs\states\visita_improdutiva\Contato.java
@@ -20,6 +19,8 @@ C:\Users\leonardo.zanguetin\git\BotCEABS\src\main\java\br\com\voxage\botceabs\st
 C:\Users\leonardo.zanguetin\git\BotCEABS\src\main\java\br\com\voxage\botceabs\states\apoio_tecnico\NGP.java
 C:\Users\leonardo.zanguetin\git\BotCEABS\src\main\java\br\com\voxage\botceabs\models\DadosFluxo.java
 C:\Users\leonardo.zanguetin\git\BotCEABS\src\main\java\br\com\voxage\botceabs\states\fechar_os\Ano.java
+C:\Users\leonardo.zanguetin\git\BotCEABS\src\main\java\br\com\voxage\botceabs\states\global\OsPath.java
 C:\Users\leonardo.zanguetin\git\BotCEABS\src\main\java\br\com\voxage\botceabs\BotCEABS.java
 C:\Users\leonardo.zanguetin\git\BotCEABS\src\main\java\br\com\voxage\botceabs\states\apoio_tecnico\ApoioTecnico.java
+C:\Users\leonardo.zanguetin\git\BotCEABS\src\main\java\br\com\voxage\botceabs\states\global\Prop.java
 C:\Users\leonardo.zanguetin\git\BotCEABS\src\main\java\br\com\voxage\botceabs\states\global\Atendente.java

@@ -5,8 +5,8 @@
 			"idNavigationDetail": 180,
 			"initialMessages": ["Primeiro, digite a ordem de serviço:"],
 			"inputErrorResponses":[
-				{"order":"1", "messages":["Acho que você digitou alguma letra por engano, ou equeceu de inserir algum número. Verifique a OS e me informe novamente."]},
-				{"order":"2", "messages": ["Acho que você digitou alguma letra por engano, ou equeceu de inserir algum número. Verifique a OS e me informe novamente."]}
+				{"order":"1", "messages":["Acho que você digitou alguma letra ou equeceu de inserir algum número por engano. Verifique a OS e me informe novamente."]},
+				{"order":"2", "messages": ["Acho que você digitou alguma letra por ou equeceu de inserir algum número por engano. Verifique a OS e me informe novamente."]}
 			],
 			"maxInputErrorResponses":["Me desculpe por não conseguir entender sua resposta, mas não se preocupe que vou prosseguir com o Atendimento."],
 			"noInputResponses":[{"order":"1", "messages":["Você não está respondendo. Tudo bem, não tem problema. Vou continuar trabalhando por aqui e quando você precisar de ajuda pode me chamar."]}]
