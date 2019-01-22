@@ -10,35 +10,35 @@
               {
                 "id":"state_fecharos",
                 "messages": [
-                	{"order":"1", "messages":["Ok, vou te transferir para a atendente 1"]}
+                	{"order":"1", "messages":["Ok, vou te transferir para a atendente"]}
                 ]
               },
                
               {
               	"id":"state_visitaimp",
                	"messages": [
-               		{"order":"1", "messages":["Ok, vou te transferir para a atendente 2"]}
+               		{"order":"1", "messages":["Ok, vou te transferir para a atendente"]}
                	]
               },
                
               {
               	"id":"state_reagcliente",
                	"messages": [
-               		{"order":"1", "messages":["Ok, vou te transferir para a atendente 3"]}
+               		{"order":"1", "messages":["Ok, vou te transferir para a atendente"]}
                	]
               },
               
               {
                 "id":"state_apoiotec",
                 "messages": [
-                  	{"order":"1", "messages":["Ok, vou te transferir para a atendente 4"]}
+                  	{"order":"1", "messages":["Ok, vou te transferir para a atendente"]}
                 ]
               },
               
               {
               	"id":"state_outros",
                 "messages": [
-               		{"order":"1", "messages":["Ok, vou te transferir para a atendente 5"]}
+               		{"order":"1", "messages":["Ok, vou te transferir para a atendente"]}
 				]
 			  }
 			]
