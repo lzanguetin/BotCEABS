@@ -71,9 +71,9 @@ public class Atendente{
                         botState.setInitialMessages(new ArrayList<>());
                     }
 	                                         	
-	                BotStateFlow state = new BotStateFlow();
-	                state.flow = BotStateFlow.Flow.CONTINUE;
-	                return state;
+	                BotStateFlow botStateFlow = new BotStateFlow();
+	                botStateFlow.flow = BotStateFlow.Flow.CONTINUE;
+	                return botStateFlow;
 	            });
 				
 				setPosFunction((botState, inputResult) ->{
@@ -99,14 +99,14 @@ public class Atendente{
 							break;
 					}
 					
-					botStateFlow.navigationKey = "TERMINATE";
-					//botStateFlow.flow = BotStateFlow.Flow.TERMINATE;
+					botStateFlow.navigationKey = "TRANSFER";
+					//botStateFlow.flow = BotStateFlow.Flow.TRANSFER;
 					
 					return botStateFlow;
 				});
 				
 				setNextNavigationMap(new HashMap<String, String>(){{
-					put("TERMINATE", "/TERMINATE");
+					put("TRANSFER", "/TRANSFER");
 				}});
 		}};
 	}
