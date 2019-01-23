@@ -3,6 +3,7 @@
 	<name>BotCEABS</name>
 	<comment></comment>
 	<projects>
+		<project>AttendantBot</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>
